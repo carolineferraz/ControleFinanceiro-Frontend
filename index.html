@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="../assets/css/styles-header.css">
+    <link rel="stylesheet" href="../assets/css/styles-hero.css">
     <title>Controle financeiro</title>
 </head>
 <body>
@@ -22,6 +23,56 @@
             </ul>
         </nav>
     </header>
+    <section>
+        <div id="div-1">
+            <h2>Nova transação</h2><br>
+            <form>
+                <label for="tipo-de-transacao">Tipo de transação</label><br>
+                <input list="tipo-de-transacao"  name="tipo-de-transacao" placeholder="Compra">
+                <datalist id="tipo-de-transacao">
+                    <option value="Compra">
+                    <option value="Venda">            
+                </datalist>
+                <br><br>
+                <label for="nome-da-mercadoria">Nome da mercadoria</label><br>
+                <input type="text" id="nome-da-mercadoria" name="nome-da-mercadoria" placeholder="Input"><br><br>
+                <label for="valor">Valor</label><br>
+                <input type="text" id="valor" name="valor" placeholder="R$0,00"><br><br>
+                <input type="submit" id="submit" value="Adicionar transação">
+            </form>
+        </div>
+        <div id="div-2">
+            <h2>Extrato de transações</h2><br><br>
+            <table>
+                    <th class="th-1">Mercadoria</th>
+                    <th class="th-2">Valor </th>
+                </tr>
+                <tr>
+                    <td>Lorem ipsum dolor sit amet consectetur</td>
+                    <td class="th-2">R$ 12.999,99</td>
+                </tr>
+                <tr>
+                    <td>Quis nostrud exercitation</td>
+                    <td class="th-2">R$ 99,99</td>
+                </tr>
+                <tr>
+                    <td>Lorem ipsum</td>
+                    <td class="th-2">R$ 9,99</td>
+                </tr>
+                <tr>
+                    <td class="td-total-1">Total</td>
+                    <td class="td-total-2" class="th-2">R$ 12.909,99</td>
+                </tr>
+                <tr>
+                    <td class="td-lucro"></td>
+                    <td class="td-lucro" class="th-2">[LUCRO]</td>
+                </tr>
+            </table>
+
+
+
+        </div>
+    </section>
     <script src="../assets/js/script.js"></script>
 </body>
 </html>

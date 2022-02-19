@@ -51,9 +51,6 @@ h1{
     padding-left: 10px;
 }
 
-
-
-
 #menu a{
     color: rgb(80, 80, 80);
     text-decoration: none;
@@ -85,7 +82,7 @@ h1{
 
 }
 
-#icon-menu #menu{
+#menu #icon-menu {
     flex-wrap: wrap;
     display: flex;
     display: block;
