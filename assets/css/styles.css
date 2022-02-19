@@ -14,7 +14,7 @@ header{
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
-    height: 70px;
+    height: 80px;
     box-sizing: border-box;
 }
 
@@ -23,11 +23,36 @@ h1{
     position: absolute;
     align-self: center;
     align-self: center;
-    left: 30%;
-    right: 30%;
+    left: 25%;
     white-space: nowrap;
     
 }
+
+#menu{
+    display: flex;
+    list-style: none;
+    gap: .5rem;   
+    background: white;  
+    padding: 12px;
+}
+
+.child322{
+    border-left: 1px solid rgb(120, 120, 120);
+    border-right: 1px solid rgb(120, 120, 120);
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.child321{
+    padding-right: 10px;
+}
+
+.child323{
+    padding-left: 10px;
+}
+
+
+
 
 #menu a{
     color: rgb(80, 80, 80);
@@ -38,7 +63,12 @@ h1{
     display: flex;
     flex-direction: column;
     line-height: 110%;
-    justify-content: flex-end;
+    justify-content: flex-end;    
+    
+}
+
+#nav.active #menu a{
+    background: transparent;
 }
 
 #menu a:hover{
@@ -47,14 +77,6 @@ h1{
 
 #icon-menu:hover{
     color: rgb(120, 120, 120);
-    
-}
-
-#menu{
-    display: flex;
-    list-style: none;
-    gap: .5rem;
-    /* transition: .6s; */
     
 }
 
@@ -74,6 +96,11 @@ h1{
 }
 
 @media (max-width: 900px) {
+
+    h1{
+        right:45%;
+    }
+
     #icon-menu{
         display: flex;
         padding: .5rem 1rem;
@@ -122,13 +149,14 @@ h1{
         
     }
 
+    #menu{
+        background-color: transparent;
+        padding: 0px;
+    }
+
     #menu a{
         display: none;
     }
-
-      /* #nav.active #icon-menu{ */
-        /* trocar a imagem do menu e colocar a função de */
-    /* } */
 
     #nav.active #menu{
         display: flex;
@@ -158,31 +186,14 @@ h1{
          
     }
 
-              
-
-
-    /* #nav.active #icon-menu{
-        float: left;
-        clear:left;
-    } */
-
-
     #nav.active #menu a:hover{
         background: rgb(220, 220, 220);
         color: rgb(80, 80, 80);
     }
 
-    #nav.active #menu{
-        display: flex;
-        position: absolute; 
-    }
-
     #nav.active #icon-menu{
-        z-index: 8;
-        float: left;
-        clear: both;
+        z-index: 8;     
         position: absolute;
-        right: 70%;
     }
 }
 
