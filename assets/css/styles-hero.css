@@ -6,41 +6,51 @@ header{
 }
 
 section{
-    width: 100%;
-    font-weight: lighter;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-content: center;
 }
 
+hr{
+    display: none;
+}
+
 #div-1{
     width: 35%;
     border: 1px solid rgb(190, 190, 190);
     margin: 17px;
-    padding: 17px;
+    padding-left: 17px;
+    padding-right: 17px;
+    padding-bottom: 17px;
     border-radius: 5px;
     display: flex;
     flex-direction: column;
     justify-content: center;
        
-    
 }
 
 #div-2{
-    width: 40%;
+    width: 50%;
+    height: 50%;
     display: flex;
     flex-direction: column;
-    justify-content:space-between;
-    margin: 17px;
-    padding: 17px;
-
-}
+    margin-left: 17px;
+    margin-right: 17px;
+    padding-top: 1%;
+    white-space: nowrap;
+    
+} 
 
 table{
-    width: 100%;
-    height: 70%;
+    width: 110%;
+    margin-left: 0px;
+    margin-top: 0px;
+    margin-right: 17px;
+    padding-top: 0px;
     border-spacing: 0px;
+    line-height: 200%;
+ 
 }
 
 
@@ -49,20 +59,19 @@ th, td{
 }
 
 .th-1{
-    text-align: start;
+    text-align: start; 
 }
 
 .th-2{
-    text-align: end;
+    text-align: end;   
 }
 
-.th-1, .th-2{
-    width: 50%;
-}
 
-.td-total-1, .td-total-2{
+.td-total-1, .td-total-2, .td-total-0{
     font-weight: bold;
     border-bottom: transparent;
+    border-top: double;
+    
 }
 
 .td-total-2{
@@ -72,7 +81,8 @@ th, td{
 .td-lucro{
     border-bottom: transparent;
     font-size:x-small;
-    text-align: end;
+    text-align:end;
+    line-height: 1%;
 }
 
 
@@ -80,4 +90,118 @@ th, td{
 h2{
     white-space: nowrap;
     align-self: center;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    
 }
+
+input, #submit{
+    width: 98%;
+    height: 25px;
+    
+}
+
+#submit{
+    padding-top: 8px;
+    padding-bottom: 8px;
+    height: 30px;
+    text-align: center;
+    color: white;
+    background-color: rgb(80, 80, 80);
+    border: none;
+    border-radius: 3px;   
+}
+
+
+@media (max-width: 900px) {
+    #div-1{
+        width: 100%;     
+        display:flex;
+        
+        
+    }
+
+    form{
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    #div-1-2{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+
+    #div-1-2-2{
+        width: 78%;
+        margin-left: 3%;
+        margin-right: 2%;
+    }
+
+    #div-1-4{
+        width: 26%;
+        align-self: flex-end;
+    }
+
+
+    #div-2{
+    width: 86%;
+
+    }
+
+    #div-2 h2{
+        width: 24%;
+    }
+
+}
+
+@media (max-width: 700px) {
+
+    #div-1{
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    #div-1-2{
+        flex-direction: column;
+        width: 100%;
+
+
+    }
+
+    #div-1-2-1{
+        width: 100%;
+    }
+
+    #div-1-2-2{
+        width: 100%;
+    }
+
+    #div-1-2-3{
+        width: 100%;
+    }
+
+    #div-1-4{
+        width: 100%;
+        
+    }
+
+    #div-2 h2{ 
+        width: 44%
+    }
+
+    hr{
+        border-color: 1px solid rgb(120, 120, 120);
+        box-sizing: border-box;
+        width: 92%;
+        display: flex;
+        justify-content: center;
+
+    }
+
+
+} 

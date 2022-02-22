@@ -18,6 +18,10 @@ header{
     box-sizing: border-box;
 }
 
+hr{
+    display: none;
+}
+
 h1{
     font-size: 140%;
     position: absolute;
