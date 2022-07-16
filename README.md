@@ -5,7 +5,7 @@
 
 
 <h2>Descrição:</h2>
-Projeto do front-end de uma SPA (Single-page Application) responsiva em simples HTML, CSS e JavaScript, para praticar a responsividade. Projeto foi desenvolvido com base em um modelo pré-estabelecido no Figma.
+Projeto do front-end de uma SPA (Single-page Application) responsiva em simples HTML, CSS e JavaScript, para praticar a responsividade. O projeto foi desenvolvido com base em um modelo pré-estabelecido no Figma.
 
 
 
